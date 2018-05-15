@@ -22,7 +22,8 @@ app.use(function(req, res, next) {
     });
     next();
 });
-//
+
+// This is a new comment
 // This function can be used when the website is on maintenance. Simply uncomment, save and your requests will not go through.
 app.use(function(req, res, next) {
     res.render('maintenance.hbs', {
