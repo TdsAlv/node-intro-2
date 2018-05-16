@@ -61,6 +61,13 @@ app.get('/about', function(req, res) {
     });
 });
 
+app.get('/knn', function(req, res) {
+    res.render('knn.hbs', {
+        pageTitle: 'KNN Page',
+    });
+});
+
+
 app.get('/bad', function(req, res) {
     res.send({
         errorMessage : 'Unable to fulfill the request'
