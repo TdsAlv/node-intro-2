@@ -3,13 +3,45 @@
     <head>
         <meta charset="utf-8">
         <title>{{ pageTitle }}</title>
-        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" type="text/css" href="../stylesheets/main.css">
     </head>
     <body>
         {{> header}}
-
-        <div class="card color grow"></div>
-
+        <div class="flex-container">
+            <div class="row">
+                <a href="/about">
+                <div class="card color grow center">
+                    <p class="card_title">Trump or Hillary</p>
+                </div>
+                </a>
+                <a href="/about">
+                <div class="card color grow center">
+                    <p class="card_title">K Nearest Neighbors</p>
+                </div>
+                </a>
+                <a href="/about">
+                <div class="card color grow center">
+                    <p class="card_title">RNN</p>
+                </div>
+                </a>
+            <div class="row">
+                <a href="/about">
+                <div class="card color grow center">
+                    <p class="card_title">CNN</p>
+                </div>
+                </a>
+                <a href="/about">
+                <div class="card color grow center">
+                    <p class="card_title">Decision Tree</p>
+                </div>
+                </a>
+                <a href="/about">
+                <div class="card color grow center">
+                    <p class="card_title">Gradient Boosting</p>
+                </div>
+                </a>
+            </div>
+        </div>
         {{> footer}}
     </body>
 </html>
